@@ -33,4 +33,4 @@ echo "DIR is '$DIR'"
 "$DIR"
 cd ..
 echo "The directory is now '$DIR'"
-nohup sudo bundle exec rackup -p80 -o 0.0.0.0 &
+cd ../nohup sudo bundle exec rackup -p80 -o 0.0.0.0 &
