@@ -1,0 +1,21 @@
+<h4>Thank You For Registering Your Interest In my Training!</h4>
+<p>I'll be in touch with you soon.</p>
+<table class="emailTable">
+  <tr>
+    <td>Name: </td><td><%=params[:first_name]%> <%=params[:last_name]%></td>
+  </tr>
+  <tr>
+    <td>Phone: </td><td><%=params[:phone]%></td>
+  </tr>
+  <tr>
+    <td>Email: </td><td><%=params[:email_address]%></td>
+  </tr>
+  <tr>
+    <td>Location: </td><td><%=params[:city]%>, <%=params[:state]%> <%=params[:zip]%></td>
+  <tr>
+    <td>Hacker Score: </td><td><%=params[:hackerscore]%></td>
+  </tr>
+  <tr>
+    <td>Preferred training: </td><td><%=params[:training]%></td>
+  </tr>
+</table>

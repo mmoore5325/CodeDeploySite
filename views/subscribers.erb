@@ -1,0 +1,49 @@
+
+<!-- Page Content -->
+<div class="container partially-transparent tclogo">
+    <a class="pull-right" style="padding-top:1rem" href="logout">Logout</a>
+
+<section id="about" class="centered">
+  <h2>Send out a mailer</h2>
+  <%=message%>
+  <p class="about-whoami">
+</section>
+<% email_list = "" %>
+<% subscribers.each do |subscriber| %>
+     <% email_list += subscriber["email"] + "," %>
+<%end%>
+
+    <form action="/send_mail_to_list" method="POST">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>* To:</label>
+                            <textarea class="form-control" id="to" name="email" value=<%= email_list %> required><%= email_list%></textarea>
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>* Subject:</label>
+                            <input type="text" class="form-control" id="subject" name="subject" required>
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    
+
+                    <div class="control-group form-group">
+                        <div class="controls " style="padding-top:5.1rem">
+                            <label>* Message:</label>
+                            <textarea rows="10" cols="150" class="form-control message" id="message" name ="message" required ></textarea>
+                        </div> 
+                    </div>
+                    <div id="success"></div>
+                    <!-- For success/fail messages -->
+                <input type="submit" value="Submit" class="submit_button btn btn-primary">
+            </div>        
+        </div>
+    </form>
+
+
+
+

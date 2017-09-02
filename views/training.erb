@@ -1,0 +1,116 @@
+<div class="container content partially-transparent tclogo">
+ <section id="about" class="centered">
+  <h1>Training</h1>
+  <p class="about-whoami">
+   Start defending yourself today!
+  </p>
+  <p class="message">
+   <%=message%>
+  </p>
+ </section>
+ <div class="row">
+  <div class="col-xs-12">      
+   <section id="research" class="centered">
+    <div class="col span_1_of_2 info-box">
+     <h2>OVERVIEW</h2>
+     <p>I offer one on training through such things as Slack,Github,Jira,Zoom meetings and more.
+      <br><br><br><br><br><br><br><br><br><br><br>
+     </p>
+    </div>
+    <p class="section-title"><span>Don't just take my word for it</span></p>
+    <div class="quote"><i>"I did not realize how cool Joe was until i met him, but now I know"</i><br> <small>- <a href="mailto:someone.somewhere@theworld.org">Someone Im sure</a>, Software Consultant at the universe</small></div>
+    <div class="quote"><i>"I never realized that a hacker could do a Sweetmuffin attack on me that easy.</i><br> <small>- <a href="mailto:happy.mofof@saved.com"> Someone else</a>, Big business owner</small></div>
+    <div class="quote"><i>"I did not realize how cool Joe was until i met him, but now I know"</i><br> <small>- <a href="mailto:someone.somewhere@theworld.org">Someone Im sure</a>,Software Consultant at the universe</small></div>
+   
+    <div class="apply-box" id="apply">
+     <h2>APPLY</h2>
+     <p>There are three stages in the application process:<br></p>
+     <ol> 
+      <li>Register interest for a topic below.</li>
+      <li>Interview - this is a two way process, so that I can get to know you, and you get the chance to ask me about the services offered.</li>
+      <li>When a time are available, you will be provied with contact details for a partner or myself for that program, together with details of how to register for the service.</li>
+     </ol>
+     <p>Please choose a level between 1-10 in which you feel comfortable using your chosen skill, so that we can best match you to the services needed.</p> 
+     <h2>REGISTER INTEREST</h2>
+     <form action="/register" method="POST">
+      <div class="row">
+       <div class="col-md-6 col-sm-12">
+        <div class="control-group form-group">
+         <div class="controls">
+          <label>* First Name:</label>
+          <input required = "true" type="text" class="form-control" name="first_name" required>
+         </div>
+        </div>
+        <div class="control-group form-group">
+         <div class="controls">
+          <label>* Last Name:</label>
+          <input required = "true" type="text" class="form-control" name="last_name" required>
+         </div>
+        </div>
+        <div class="control-group form-group">
+         <div class="controls">
+          <label>* Phone Number:</label>
+          <input type="tel" class="form-control" name="phone">
+         </div>
+        </div>
+        <div class="control-group form-group">
+         <div class="controls">
+          <label>* Email:</label>
+          <input type="email" class="form-control" name="email_address">
+         </div>
+        </div>
+        <div class="control-group form-group">
+         <div class="controls">
+          <label>* Skill Level:</label>
+          <input   type="number" class="form-control" name="hackerscore" required = "true" min='0' max='36'>
+         </div>
+        </div>                    
+       </div> 
+       <div class="col-md-6 col-sm-12">
+        <div class="control-group form-group">
+         <div class="controls">
+          <label>* City:</label>
+          <input   type="text" class="form-control" name="city" required = "true">
+         </div>
+        </div>
+        <div class="control-group form-group">
+         <div class="controls">
+          <label>* State:</label>
+          <input   type="text" class="form-control" name="state" required = "true">
+         </div>
+        </div>
+        <div class="control-group form-group">
+         <div class="controls">
+          <label>* Zip:</label>
+          <input   type="text" class="form-control" name="zip" required = "true">
+         </div>
+        </div>
+        <div class="control-group form-group">
+         <div class="controls">
+          <label>* Preferred Training:</label>
+          <select name="service" style="width:80%">
+           <option selected disabled style='display: none' value=''>-Choose A Training-</option> 
+           <option value="security">Security Services</option>
+           <option value="front_end">Frontend Services</option>
+           <option value="back_end">Backend Services</option>
+           <option value="devops">Devops Services</option>
+           <option value="other">Other Services</option>
+          </select>
+         </div>
+        </div>
+        <div class="control-group form-group">
+         <label>* I'm not a robot! <%=num1%> + <%=num2%> =</label>
+         <input   type="number" class="form-control" name="robot" required = "true" >
+         <input type="hidden" name="sum" value=<%=sum%>>  
+        </div>
+        <input type="submit" value="Submit" class="button">
+        <input type="checkbox" name="mailinglist" value="add"> Add me to the mailing list
+       </div>        
+      </div>
+     </form>
+    </div>
+   </section>
+  </div>
+ </div>
+</div>
+

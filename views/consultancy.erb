@@ -1,0 +1,56 @@
+<div class="container content partially-transparent tclogo">
+
+          
+          <h2>To discuss how I can help, Please get in touch</h2>
+          <form action="/contact" method="POST">
+            <div class="row">
+            <div class="col-md-7 col-sm-12">
+              <div class="control-group form-group">
+                  <div class="controls">
+                      <label>* Name:</label>
+                      <input required = "true" type="text" class="form-control" id="name" name="name" required>
+                      <input type="hidden" name="page" value="contact">
+                      <p class="help-block"></p>
+                  </div>
+              </div>
+              <div class="control-group form-group">
+                  <div class="controls">
+                      <label>&nbsp; Phone Number:</label>
+                      <input type="tel" class="form-control" id="phone" name="phone">
+                  </div>
+              </div>
+              <div class="control-group form-group">
+                  <div class="controls">
+                      <label>* Email Address:</label>
+                      <input   type="email" class="form-control" id="email" name="email" required = "true" >
+                      <input type="hidden" name="reason" value="Consulting">
+                  </div>
+              </div>
+              <div class="control-group form-group">
+                          <label>* I'm not a robot! <%=num1%> + <%=num2%> =</label>
+                          <input   type="number" class="form-control" name="robot" required = "true" >
+                          <input type="hidden" name="sum" value=<%=sum%>>  
+                      </div>
+            </div>        
+            <div class="col-md-5 col-sm-12">
+
+                    <div class="control-group form-group">
+                        <div class="controls ">
+                            <label>* Message:</label>
+                            <textarea rows="13" cols="150" class="form-control message" id="message" name ="message" required = "true" ></textarea>
+                        </div> 
+                    </div>
+                    
+
+                    
+                                
+                    <!-- For success/fail messages -->
+                <input type="submit" value="Submit" class="button">
+                <input type="checkbox" name="mailinglist" value="add"> Add me to the mailing list
+            </div>        
+        </div>
+
+    
+    </form>
+
+</div>

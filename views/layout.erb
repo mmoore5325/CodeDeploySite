@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title><%=@title%></title>    
+    <meta name="author" content="JoeMckenzie">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/custom.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+    <link rel="icon" href="/images/" />
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!--[if lt IE 9]>
+      <script src="/assets/themes/bootstrap/resources/respond/Respond.min.js"></script>
+    <![endif]-->
+
+
+
+ <!-- Google Analaytics Goes here -->
+   
+   
+  </head>
+  <div class= "background-image">
+    <body class="">
+      <div class="navbar navbar-fixed-top"data-offset-top="200" role="navigation" style="border-bottom: 1rem solid #1d297b; border-style: solid; border-color: #1d297b; ">
+        <div class="container header" >
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="/">
+              <img src="/images/" class="padding-bottom" width="150px">
+            </a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-nav2 menubar">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: #1d297b;">About<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/" style="color: #1d297b;">About</a></li>
+                  <li><a href="/meetme" style="color: #1d297b;">Meet the man</a></li>
+                  <li><a href="/support" style="color: #1d297b;">Support</a></li>
+                  <li><a href="/contact" style="color: #1d297b;">Contact</a></li>
+                </ul>
+              </li>
+              <li><a href="/consultancy" style="color: #1d297b;">Consultancy</a></li>
+<!--              <?li><a href="/foundation" style="color: #1d297b;">Foundation</a></li>-->
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+
+      <%=yield%>
+      <div class="reverse_floating_button" style="background:#67699f; border-radius:5px 5px 0px 0px; font-weight:normal; font-family:Arial, Helvetica, sans-serif; top:150px; right: 18px; -webkit-transform:rotate(270deg);-moz-transform:rotate(270deg);-transform:rotate(270deg);-ms-transform:rotate(270deg);-webkit-transform-origin:100%;transform-origin:100%; -ms-transform-origin:100%; -moz-transform-origin:100%; padding:0px 10px 0px 10px; font-size:18px; color:#67c4ae;text-align:center; cursor:pointer;border:none;text-decoration: none;box-shadow: 0 0 8px rgba(0, 0, 0, 0.5); z-index:999999" ><a href="/support">Support</a></div>
+
+      <div class="floating_button" style="background:#67c4ae; border-radius:5px 5px 0px 0px; font-weight:normal; font-family:Arial, Helvetica, sans-serif; top:235px; right: 18px; -webkit-transform:rotate(270deg);-moz-transform:rotate(270deg);-transform:rotate(270deg);-ms-transform:rotate(270deg);-webkit-transform-origin:100%;transform-origin:100%; -ms-transform-origin:100%; -moz-transform-origin:100%; padding:0px 10px 0px 10px; font-size:18px; color:#67699f;text-align:center; cursor:pointer;border:none;text-decoration: none;box-shadow: 0 0 8px rgba(0, 0, 0, 0.5); z-index:999999"><a href="/training#apply">Contact Me</a></div>
+
+      <footer>
+        <hr>
+        <div class="container">
+          <!-- <div class="row"> -->
+            <div class="col-lg-5 col-sm-6 col-lg-offset-1">
+              <b>Joseph Mckenizie Consulting</b><br>
+              <i class="fa fa-envelope"></i><a href="mailto:joseph.p.mckenzie84@gmail.com" class="email" data-animate-hover="pulse">joseph.p.mckenzie84@gmail.com</a><br>
+             <a href="tel:7242315948">(724) 231-5948</a><br> 
+              <a href="https://www.facebook.com/JosephMckenziepcrepair" class="external facebook" data-animate-hover="pulse"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.twitter.com/josephpmckenzie" class="external twitter" data-animate-hover="pulse"><i class="fa fa-twitter"></i></a>
+            </div>
+            <hr class="hidden-sm hidden-md hidden-lg hidden-xl">
+            <div class="col-lg-6 col-sm-6">
+              <h5 class="subscribetext"><a href='/contact'>Contact us</a>, and subscribe to our mailing list:</h5>
+              <form class="subscribe" action="subscribe" method="POST">
+                <div class="input-group">
+                  <input type="email" class="form-control2" name="email" placeholder="mail@example.com">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit"><i class="fa fa-send"></i></button>
+                  </span>
+                </div>
+              </form>     
+            </div>
+          <!-- </div> -->
+        </div>
+        <hr>
+        <div class="row centered">
+          <p class="centered">&copy; Joseph Mckenizie Consulting 2017</p>
+        </div>
+      </footer>
+
+
+      <script src="/js/jquery.min.js"></script>
+      <script src="/js/bootstrap.min.js"></script>
+
+    </body>
+  </div>  
+</html>

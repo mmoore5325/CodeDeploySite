@@ -1,0 +1,239 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,900,900italic|Merriweather:300italic,300,700,700italic);
+
+/* COLORS 
+green: #67C4AE;
+purple: #67699F;
+blue #1E2C79;
+*/
+
+html {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  /*color: #9B9B9B;*/
+  /*font-family: "Merriweather", sans-serif, serif;*/
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 1.75rem;
+  color: #1E2C79;
+/*  text-align: center; */
+}
+footer {
+  font-size: 1.5rem !important;
+}
+
+.centered {
+  text-align: center;
+}
+
+/*h1, h2, h3, h4 {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  color: #67C4AE;
+}*/
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 4rem;
+/*
+  font-size: 60px;
+  line-height: 75px;
+*/
+}
+h2 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+h3 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+p {
+  margin: 1.5rem 0;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+li {
+  padding-left: -1em;
+  text-indent: 0em;
+  list-style-position: outside;
+}
+
+nav {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1vw;
+  background: #112337;  /*#D0021B;*/
+  font-size: 2rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1vw;
+  border-radius: 2vw;
+}
+nav a:hover {
+  background: #fff;
+  color: #112337;
+}
+
+a {
+  color: #67699F;
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover {
+  color: #67C4AE;
+}
+
+
+/*
+ * BUTTONS
+ */
+
+.about-social-button-resume,
+.about-social-button-twitter,
+.about-social-button-linkedin,
+.button-pdf,
+.button-video {
+  background: url(/assets/images/button.png) 0.5vw 0.5vw no-repeat;
+}
+
+.about-social-button-resume,
+.about-social-button-twitter,
+.about-social-button-linkedin {
+  display: inline-block;
+  padding: 0 1.5vw 0 3.5vw;
+  margin: 0 10 vw;
+  height: 2vw;
+  line-height: 2vw;
+  border-radius: 2vw;
+  background-color: #112337;
+  color: #fff;
+  text-decoration: none;
+}
+
+.button {
+  background-color: #67699F;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  height: auto;
+  border-radius: 1vw;
+  border: 0.1vw solid #1E2C79;
+  color: #67C4AE !important;
+  text-decoration: none;
+  margin-bottom: 5%;
+}
+
+.floating_button{
+  display: block; margin-top: 0px; margin-left: 0px; width:auto ; height: auto; 
+  position:fixed; z-index:999999; overflow: auto;
+}
+
+.reverse_floating_button{
+  display: block; margin-top: 0px; margin-left: 0px; width:auto ; height: auto; 
+  position:fixed; z-index:999999; overflow: auto;
+}
+
+.reverse_floating_button a {
+  text-decoration: none;
+  color: #67C4AE;
+}
+
+.floating_button a:hover, .reverse_floating_button a:hover {
+  text-decoration: none;
+  color: #1E2C79
+}
+/*
+ * LAYOUT
+ */
+
+section {
+  margin-top:    4rem;
+  margin-bottom: 4rem;
+  margin-left:    0vw;
+  margin-right:   0vw;
+}
+
+.header {
+  width: 100%;
+  padding-right:10%;
+  padding-left: 10%;
+}
+
+.section-title span {
+  position: relative;
+  background: #fff;
+/*  font-family: "Lato", sans-serif;*/
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  text-transform: uppercase;
+  /*color: #2C2C2C;
+  opacity: 0.70;*/
+}
+
+.quote {
+  width: 100%;
+  padding-right:5%;
+  padding-left: 5%;
+  padding-bottom: 5%;
+}
+
+.message {
+	color:#67C4AE;
+}
+
+
+#about h1 {
+  font-size: 8vw;
+  line-height: 8vw;
+  padding-bottom: 4vw;
+  padding-top: 14vw;
+}
+
+.about-whoami {
+  margin: 0rem;
+  font-size: 2rem;
+  line-height: 4rem;
+}
+
+.about-social {
+  margin: 1rem;
+}
+
+
+
+/*
+ * REASEARCHES
+ */
+
+#research {
+
+}
+#research:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.research-item {
+  width: 50%;
+  padding: 0 1.5rem;
+  float: left;
+  display: inline-block;
+  vertical-align: top;
+}
