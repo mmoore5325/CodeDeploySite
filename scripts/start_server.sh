@@ -27,6 +27,10 @@ DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 if [ "$DIR" != "$RDIR" ]; then
   echo "DIR '$RDIR' resolves to '$DIR'"
 fi
+cd ..
 echo "DIR is '$DIR'"
  
-"$DIR" nohup sudo bundle exec rackup -p80 -o 0.0.0.0 &
+"$DIR"
+cd ..
+echo "The directory is now '$DIR'"
+nohup sudo bundle exec rackup -p80 -o 0.0.0.0 &
