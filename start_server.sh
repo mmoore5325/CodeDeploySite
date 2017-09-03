@@ -37,5 +37,5 @@
 # cd ..
 # echo "The directory is now '$DIR'"
 # cd ../deployment-archive nohup sudo bundle exec rackup -p80 -o 0.0.0.0 &
-(cd .. && nohup sudo bundle exec rackup -p80 -o 0.0.0.0 &)
-echo "working?"
+(nohup sudo bundle exec rackup -p80 -o 0.0.0.0 &)
+echo "working?----p222222222222222222222222222222222222"
