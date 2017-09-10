@@ -3,6 +3,11 @@ os: linux
 files:
   - source: /.
     destination: /var/www/
+  
+permissions:
+  - object: /var/www/
+    mode: 755
+    
 hooks:
   BeforeInstall:
     - location: scripts/stop_server.sh
