@@ -6,8 +6,8 @@ files:
   
 permissions:
   - object: /var/www/
-    mode: 755
-    
+    mode: 777
+
 hooks:
   BeforeInstall:
     - location: scripts/stop_server.sh
