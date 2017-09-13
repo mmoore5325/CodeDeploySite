@@ -1,4 +1,4 @@
 #!/bin/bash
-sudo killall ruby2.3
+sudo killall ruby
 echo "Stop"
 
