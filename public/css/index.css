@@ -1,0 +1,149 @@
+body {
+    height: 800px;
+    background-color: white;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(top, red, black, white);
+    /* For Safari 5.1 to 6.0 */
+    background-color: -o-linear-gradient(top, red, black, white);
+    /* For Opera 11.1 to 12.0 */
+    background-color: -moz-l1inear-gradient(top, red, black, white);
+    /* For Firefox 3.6 to 15 */
+    background-color: linear-gradient(top, red, black, white);
+    /* Standard syntax (must be last) */
+}
+
+.intro {
+    position: absolute;
+    padding: 100px 100px;
+    /*     background-color: yellow; */
+    position: relative;
+    top: 180px;
+    right: -50px;
+    width: 100px;
+    align-content: center;
+    height: 100px;
+}
+
+#profile-image {
+    position: absolute;
+    top: -75px;
+    left: 25px;
+    margin-top: 50px;
+    height: 300px;
+    border-radius: 25%;
+    transition: all 5s;
+    border: black groove 5px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/*#profile-image:hover {
+    transform: scale(1.5);
+}*/
+
+.mySlides {
+    display: none;
+}
+
+.w3-animate-left {
+    position: relative;
+    animation: animateleft 0.4s
+}
+
+@keyframes animateleft {
+    from {
+        left: -300px;
+        opacity: 0
+    }
+    to {
+        left: 0;
+        opacity: 1
+    }
+}
+
+.rightbox {
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    right: 30px;
+    top: 200px;
+    border: red solid 5px;
+    border-style: ridge;
+    border-radius: 30px;
+}
+
+.rightbox li {
+    display: inline;
+    list-style: none;
+}
+
+#title {
+    font-size: 26px;
+    position: relative;
+    left: 53px;
+    color: yellow;
+}
+
+
+/*.alt-colors{
+    background-color: yellow;
+    width: 250px;
+    padding-
+}*/
+
+ul.alt-colors-list {
+    position: relative;
+    font-size: 24px;
+    padding: 0;
+    text-align: center;
+}
+
+.alt-colors-list li:nth-child(odd) {
+    padding: 3px;
+    background-color: yellow;
+}
+
+.alt-colors-list li:nth-child(even) {
+    background-color: blue;
+    padding: 3px;
+}
+
+.roundedBorder {
+    border-radius: 20%;
+}
+
+.contact {
+    position: absolute;
+    height: 450px;
+    width: 375px;
+    border: red groove 5px;
+    bottom: 50px;
+    left: 50px;
+}
+
+#emailbox {
+    height: 200px;
+    width: 300px;
+    border: black groove 5px;
+}
+
+#emailme {
+    position: relative;
+    left: 75px;
+    align: center;
+    font-size: 24px;
+    color: yellow;
+    font-weight: bold;
+}
+
+#mailbox {
+    position: absolute;
+    left: 32px;
+}
+
+.emailfields {
+    margin-bottom: 6px;
+}

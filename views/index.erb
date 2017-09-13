@@ -1,31 +1,55 @@
-<!DOCTYPE HTML5>
+
+<!DOCTYPE html>
 <html>
+<head>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>  
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script> 
+    <link rel = "stylesheet" type = "text/css" href = "./css/index.css" />
+</head>
+<body>
+<div class="intro">
+    <div id="main-img">
+        <img class="slideShow w3-animate-left" src="./img/marley.jpg" alt="image-of-Marley-good-ole-boy-awwwww" id="profile-image">
+        <img class="slideShow w3-animate-left" src="./img/graduation.jpg" alt="group-photo-all-graduates" id="profile-image">
+        <img class="slideShow w3-animate-left" src="./img/graduation2.jpg" alt="group-photo-all-graduates2" id="profile-image">
+        <img class="slideShow w3-animate-left" src="./img/graduation3.jpg" alt="four-graduates" id="profile-image">
+    </div>
+</div>
 
-	<head>
-		<title>AWS CodeDeploy Monitor</title>
-    <meta http-equiv="refresh" content="5";>
- 	</head>
+<div class="rightbox">
+    <div id="skills">
+        <p id="title"><b>Programming Skills</b></p>
+        <ul class="alt-colors-list">
+            <li class="roundedBorder">Ruby</li>
+            <li class="roundedBorder">HTML</li>
+            <li class="roundedBorder">CSS</li>
+            <li class="roundedBorder">Node</li><br>
+        </ul>
+        <ul class="alt-colors-list">
+            <li class="roundedBorder">Javascript</li>
+            <li class="roundedBorder">SQL</li>
+            <li class="roundedBorder">API</li>
+            <li class="roundedBorder">AWS</li>
+        </ul>
+    </div>
+</div>
+        
+<script>
+var myIndex = 0;
+carousel();
 
- 	<body>
- 		<h1>AWS CodeDeploy Monitor</h1>
- 			<div>
- 			    <div>
- 			        ELB (Public Perspective)<br />
- 			        <iframe src="http://LinuxWebELB-965027390.us-east-1.elb.amazonaws.com"></iframe>
- 			    </div>
-			<!--    <div style="float:left; width:30%;">
- 			        Instance 1<br />
- 			        <iframe id="iframe1" src="34.214.12.178"></iframe>
-			    </div>
- 			    <div style="float:left; width:30%;">
- 			        Instance 2<br />
- 			        <iframe id="iframe2" src="http://52.23.177.60"></iframe>
- 			    </div>
- 			    <div style="float:left; width:30%;">
- 			        Instance 3<br />
- 			        <iframe id="iframe3" src="http://52.91.218.136"></iframe>
- 			    </div> -->
- 			</div>
- 	</body>
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("slideShow");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2500);    
+}
 
- </html>
+</script>
+</body>
+</html>

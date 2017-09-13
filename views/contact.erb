@@ -1,47 +1,32 @@
-<div class="container partially-transparent tclogo">
- 
-          <h2>SEND A MESSAGE</h2>
-        
-          <form action="/contact" method="POST">
-            <div class="row">
-              <div class="col-md-7 col-sm-12">
-                <div class="control-group form-group">
-                  <div class="controls">
-                    <label>* Name:</label>
-                    <input required = "true" type="text" class="form-control" id="name" name="name" required>
-                    <input type="hidden" name="page" value="contact">
-                    <p class="help-block"></p>
-                  </div>
-                </div>
-                <div class="control-group form-group">
-                  <div class="controls">
-                    <label>&nbsp; Phone Number:</label>
-                    <input type="tel" class="form-control" id="phone" name="phone">
-                  </div>
-                </div>
-                <div class="control-group form-group">
-                  <div class="controls">
-                    <label>* Email Address:</label>
-                    <input   type="email" class="form-control" id="email" name="email" required = "true" >
-                    <input type="hidden" name="reason" value="Info">
-                  </div>
-                </div>
-                <div class="control-group form-group">
-                  <label>* I'm not a robot! <%=num1%> + <%=num2%> =</label>
-                  <input   type="number" class="form-control" name="robot" required = "true" >
-                  <input type="hidden" name="sum" value=<%=sum%>>  
-                </div>
-              </div>        
-              <div class="col-md-5 col-sm-12">
-                <div class="control-group form-group">
-                  <div class="controls ">
-                    <label>* Message:</label>
-                    <textarea rows="13" cols="150" class="form-control message" id="message" name ="message" required = "true" ></textarea>
-                  </div> 
-                </div>
-                <input type="submit" value="Submit" class="button">
-                <input type="checkbox" name="mailinglist" value="add"> Add me to the mailing list
-              </div>        
-            </div> 
-          </form>
-        </div>
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>  
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script> 
+    <link rel = "stylesheet" type = "text/css" href = "./css/index.css" />
+</head>
+<body>
+<div id="thanks">
+<h3 class="responsive_center" style="color:green;"><b><%=thanksmessage%></b></h3>
+</div>
+<div class="contact">
+    <div id="mailbox">
+        <p id="emailme">Email me!</p>
+        <form class="emailfieldz" method="post" action="/contact">
+            <input class="emailfields" id="fname" type="text" width="75px" name="fname" placeholder="First Name" required><br>
+            <input class="emailfields" id="fname" type="text" width="75px" name="lname" placeholder="Last Name" required><br>
+            <input class="emailfields" id="email" type="text" width="75px" name="email" placeholder="Email" required><br>
+            <input class="emailfields" id="fname" type="text" width="75px" name="subject" placeholder="Subject" required><br>
+            <input class="emailfields" id="emailbox" type="text" width="125px" name="message" placeholder="Message" height="284px" required><br>
+            <input id="emailsubmit" type="submit" value="Contact me!"><br>
+        </form>
+    </div>
+</div>
+
+    
+
+<script>
+
+</script>
+</body>
+</html>

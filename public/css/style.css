@@ -1,0 +1,111 @@
+@font-face {
+    font-family: blanka;
+    src: local(blanka), url('public/font/blanka.otf') format('opentype');
+}
+
+.main-nav {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 130px;
+    width: 100%;
+    color: white;
+    background-color: teal;
+}
+
+#navlist li {
+    font-family: blanka;
+    float: right;
+    display: inline;
+    list-style-type: none;
+    position: relative;
+    top: 60px;
+    font-size: 24px;
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+#navlist a {
+    text-decoration: none;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+#navlist li {
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+#navlist a:hover {
+    color: red;
+    transform: scale(1.25);
+}
+
+#navlist li:hover {
+    color: red;
+    transform: scale(1.25);
+}
+
+#navlist a:active {
+    color: red;
+}
+
+
+/*#navlist li:hover {
+    color: hotpink;
+}*/
+
+
+/*#navlist li:hover {
+    color: hotpink;
+}*/
+
+.nav {
+    position: absolute;
+    left: 820px;
+    width: 555px;
+    height: 110px;
+    border-bottom: red groove 5px;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown:hover {
+    color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: teal;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #0399ff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    outline: 0;
+}
+
+#thanks {
+    height: 50px;
+    width: 400px;
+    text-align: center;
+    position: relative;
+    top: 300px;
+    float: right;
+    right: 100px;
+}
