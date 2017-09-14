@@ -3,10 +3,6 @@ os: linux
 files:
   - source: /.
     destination: /var/www/
-  
-permissions:
-  - object: /var/www/
-    mode: 777
 
 hooks:
   BeforeInstall:
